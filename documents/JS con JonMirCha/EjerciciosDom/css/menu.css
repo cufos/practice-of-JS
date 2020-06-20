@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: yellow;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+  transform: translate(-100%);
+  z-index: 2;
+}
+
+.active {
+  transform: translate(0);
+}
+
+.hamburger {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 5;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 1em;
+}
+
+.link:hover {
+  color: #000;
+  background-color: yellow;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+}
